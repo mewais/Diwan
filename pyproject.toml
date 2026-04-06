@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "diwan"
+version = "0.1.0"
+description = "Diwan (ديوان) — Lightweight agent-first issue tracker"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = [
+    "click>=8.0",
+    "textual>=0.80",
+    "mcp>=1.0",
+]
+
+[project.scripts]
+diwan = "diwan.cli:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["diwan"]
