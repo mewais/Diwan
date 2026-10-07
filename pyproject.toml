@@ -9,6 +9,7 @@ description = "Diwan (ديوان) — Lightweight agent-first issue tracker"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
+license-files = ["LICENSE"]
 dependencies = [
     "click>=8.0",
     "textual>=0.80",
